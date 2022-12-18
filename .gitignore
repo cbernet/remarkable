@@ -3,7 +3,6 @@ build/
 *.py[co]
 *.egg-info
 .pytest_cache
-
 .helmignore
 
 .coverage
@@ -16,3 +15,5 @@ secrets*
 .idea/
 
 .vscode/
+
+.DS_Store
