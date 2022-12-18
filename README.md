@@ -41,6 +41,24 @@ You should get a file `lambdas.pdf` next to the input directory.
 
 You can now upload this file to google drive and it will be indexed. 
 
+## Automation tips 
+
+On MacOS, you can use the Automator to run the conversion and 
+upload to google drive automatically. 
+
+* create a directory where you'll do all your exports from remarkable.
+when a subdirectory is added there from remarkable, the action will be triggered,
+and the subdirectory path will be passed as argument to the script below
+* create an upload directory in Google Drive
+* set up the following script in automator (pass input as arguments) : 
+
+```shell
+input_file="$1"
+output_dir="/Users/cbernet/Google Drive/My Drive/Notes/Remarkable"
+
+source /Users/cbernet/miniconda3/bin/activate remarkable
+rk_to_pdf "$input_file" -o "$output_dir"
+```
 
 
 

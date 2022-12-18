@@ -1,6 +1,6 @@
 import pathlib
 from PIL import Image
-from typing import List, Iterable
+from typing import List
 
 
 def image_files_to_pdf(image_files: List[pathlib.Path], pdf_file: str):
