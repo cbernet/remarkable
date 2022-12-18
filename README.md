@@ -24,6 +24,9 @@ with png files inside
 * Install : 
 
 ```shell
+conda create -n remarkable python=3.10
+conda activate remarkable 
+pip install --upgrade pip
 pip install -r requirements.txt
 pip install . 
 ```
